@@ -30,6 +30,13 @@ public class Topico {
 	private Curso curso;
 	@OneToMany(mappedBy = "topico")
 	private List<Resposta> respostas = new ArrayList<>();
+	
+	public Topico(String titulo, String mensagem, Curso curso) {
+		super();
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
+	}
 
 	@Override
 	public int hashCode() {
