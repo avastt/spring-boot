@@ -14,8 +14,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import br.com.meuprojeto.forum.controller.dto.TopicoDto;
 import br.com.meuprojeto.forum.controller.form.TopicoForm;
-import br.com.meuprojeto.forum.controller.repository.CursoRepository;
 import br.com.meuprojeto.forum.model.Topico;
+import br.com.meuprojeto.forum.repository.CursoRepository;
 import br.com.meuprojeto.forum.repository.TopicoRepository;
 
 @RestController

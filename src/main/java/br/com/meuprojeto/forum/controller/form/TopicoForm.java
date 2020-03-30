@@ -1,8 +1,8 @@
 package br.com.meuprojeto.forum.controller.form;
 
-import br.com.meuprojeto.forum.controller.repository.CursoRepository;
 import br.com.meuprojeto.forum.model.Curso;
 import br.com.meuprojeto.forum.model.Topico;
+import br.com.meuprojeto.forum.repository.CursoRepository;
 
 public class TopicoForm {
 

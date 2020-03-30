@@ -1,4 +1,4 @@
-package br.com.meuprojeto.forum.controller.repository;
+package br.com.meuprojeto.forum.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
