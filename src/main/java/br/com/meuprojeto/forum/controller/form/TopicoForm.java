@@ -11,7 +11,7 @@ import br.com.meuprojeto.forum.repository.CursoRepository;
 
 public class TopicoForm {
 
-	@NotNull @NotEmpty @Length(min = 5)
+	 @NotEmpty @Length(min = 5)
 	private String titulo;
 	
 	@NotNull @NotEmpty @Length(min = 10)
