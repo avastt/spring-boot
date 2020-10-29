@@ -1,8 +1,8 @@
 package br.com.meuprojeto.forum.controller.dto;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+
+import org.springframework.data.domain.Page;
 
 import br.com.meuprojeto.forum.model.Topico;
 
@@ -37,17 +37,9 @@ public class TopicoDto {
 		return dataCriacao;
 	}
 
-	public static List<TopicoDto> converter(List<Topico> topicos) {
-		List<TopicoDto> listaTopicoDto = new ArrayList<TopicoDto>();
+	public static Page<TopicoDto> converter(Page<Topico> topicos) {
 
-		for (Topico topico : topicos) {
-
-			TopicoDto topicoDto = new TopicoDto(topico);
-			listaTopicoDto.add(topicoDto);
-
-		}
-		
-		return listaTopicoDto;
+		return topicos.map(TopicoDto::new);
 	}
 
 }
